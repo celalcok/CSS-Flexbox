@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Prosto+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 1rem;
+}
+h2{
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+label{
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+input,label{
+    cursor: pointer;
+}
+
+.main-container{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+}
+.controls{
+    border: 0.1rem solid black;
+    width: 40%;
+}
+.flex-direction-radio-container{
+    width: 100%;
+    gap: 0.5rem;
+    padding:0 0.5rem;
+}
+.justify-content-radio-container{
+    width: 100%;
+    gap: 0.5rem;
+    padding:0 0.5rem;
+}
+
+.align-items-radio-container{
+    width: 100%;
+    gap: 0.5rem;
+    padding:0 0.5rem;
+
+}
+
+.input-group{
+    cursor: pointer;
+}
+
+.items-container{
+    width: 100%;
+    display: flex;
+    gap: 0.2rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-left: none;
+
+}
+.item{
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    label{
+        font-size: 0.5rem;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .controls{
+        width: 100%;
+    }
+
+    .flex-direction-radio-container{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .justify-content-radio-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    .align-items-radio-container{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .items-container{
+        height: 500px;
+        border: 0.1rem solid black;
+        border-top: none;
+    
+    
+    }
+    .item{
+        width: 1rem;
+        height: 1rem;
+        background-color: black;
+        
+    }
+
+}
+@media only screen and (max-width: 800px) {
+
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 0.5rem;
+    }
+    span{
+        font-size: 0.5rem;
+    }
+    label{
+        font-size: 0.5rem;
+
+    }
+
+}
